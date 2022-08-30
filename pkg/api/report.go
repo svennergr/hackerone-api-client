@@ -11,7 +11,7 @@ type Report struct {
 		CreatedAt                     time.Time   `json:"created_at"`
 		VulnerabilityInformation      *string     `json:"vulnerability_information"`
 		TriagedAt                     *time.Time  `json:"triaged_at"`
-		ClosedAt                      *time.Time  `json:"closed_at"`
+		ClosedAt                      time.Time   `json:"closed_at"`
 		LastReporterActivityAt        *time.Time  `json:"last_reporter_activity_at"`
 		FirstProgramActivityAt        *time.Time  `json:"first_program_activity_at"`
 		LastProgramActivityAt         *time.Time  `json:"last_program_activity_at"`

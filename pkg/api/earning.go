@@ -1,10 +1,11 @@
 package api
 
 type Earning struct {
-	Id         int    `json:"id"`
+	Id         string    `json:"id"`
 	Type       string `json:"type"`
 	Attributes struct {
-		Amount int `json:"amount"`
+		Amount float64 `json:"amount"`
+		CreatedAt string `json:"created_at"`
 	} `json:"attributes"`
 	Relationships struct {
 		Team *struct {
